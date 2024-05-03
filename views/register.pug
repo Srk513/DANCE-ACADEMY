@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/registerstyle.css
+block content   
+   div.container
+    div.box
+        h2 REGISTER
+        div.myform
+            form(action="/register", method="post" class="myform")
+                input(type="name", class="myinput", name="name",placeholder="Enter your name")
+                input(type="email", class="myinput", name="email",placeholder="Enter your Email")
+                input(type="password", class="myinput", name="password",placeholder="Enter your Password")
+                div.checkit
+                    input(type="checkbox", name="checkbox")
+                    p remember me
+                button(class="btn") 
+                    | Submit
+                a(href="/login") I have an account

@@ -1,0 +1,29 @@
+doctype html 
+html 
+    head 
+        title Shradha Dance Acadamy 
+        block scripts 
+        block style 
+    body 
+        nav#navbar
+            ul 
+                li #[a(href="/") Home ]
+                li #[a(href="/") About ]
+                li #[a(href="/") Services ]
+                li #[a(href="/classinfo") Class info ]
+                li #[a(href="/contact") Contact us]  
+            div#login #[a(href="/login") Login]
+        block content 
+        footer#footer   
+            div.footerinfo 
+                div.logo
+                    img(src="/static/logo.jpg", alt="" width="50px" height="50px")
+                    p Shradha Dance Acadamy
+                div copyright&copy;www.shradhadanceacadamy.com|All rights are reserved
+                div contact us:
+                    p tel:1111222233<br>email:shradha@gmail.com  
+
+        script 
+            include ../static/index.js 
+        style 
+            include ../static/style.css

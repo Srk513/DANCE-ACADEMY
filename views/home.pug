@@ -1,0 +1,36 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    section#introsection 
+       div.heading WELCOME TO SHRADHA'S DANCE ACADAMY
+       div.small  Eat Sleep Dance Repeat
+    section.ourMission
+      h2 OUR MISSION
+      div.mission 
+        div#first DANCE PERFECTION
+            div.content
+              img(src="/static/logo.jpg", alt="")
+              p this is the best dance acadamy of the universe
+        div#second DANCE THE WAY YOU LIKE
+            div.content
+              img(src="/static/logo.jpg", alt="")
+              p this is the best dance acadamy of the universe
+        div#third EXPERT TEACHING
+           div.content
+              img(src="/static/logo.jpg", alt="")
+              p this is the best dance acadamy of the universe
+    section.sponsersection
+      h2  OUR SPONSERS
+      div.image
+        img(src="/static/apple.png", alt="",width="100px" height="100px")
+        img(src="/static/hp.png", alt="",width="100px" height="100px")
+        img(src="/static/apple.png", alt="",width="100px" height="100px")
+        img(src="/static/hp.png", alt="",width="100px" height="100px")
+    
